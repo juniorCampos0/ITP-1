@@ -1,0 +1,10 @@
+linhas: 5
+colunas: 3
+ string
+ int
+
+            0         nome         nota
+            1         asdk            7
+            2         kkkd            9
+            3         kasd            9
+            4          asd            5
