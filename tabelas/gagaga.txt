@@ -1,0 +1,6 @@
+linhas: 2
+colunas: 2
+ float
+
+            0          ala
+            1   123.000000
