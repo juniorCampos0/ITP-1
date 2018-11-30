@@ -18,5 +18,6 @@ char idTab[50];
 int l;
 int k;
 tab3 valor;
+char palavra[75];
 
 void ProcuraString ();

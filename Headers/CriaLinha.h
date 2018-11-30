@@ -18,3 +18,4 @@ tab1 **mat1;
 tab1 *novalinha;
 char id[25];
 char idTab[50];
+char palavra[75];

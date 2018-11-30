@@ -55,10 +55,18 @@ void criar(void){
 						scanf("%s", &tipo[j][0]);
 					}
 				}
-
 				setbuf(stdin, NULL);
 				printf("Digite o atributo da coluna: ");
-				scanf("%s", &mat[i][j].string);
+				setbuf(stdin, NULL);
+				scanf("%s", &palavra);
+				while (strlen(palavra)>12){
+					printf ("String muito grande por favor digite uma com até 12 caracteres: ");
+					setbuf(stdin, NULL);
+					scanf("%s", &palavra);
+				}
+				strcpy(mat[i][j].string, "");
+				strcpy(mat[i][j].string, palavra);
+				strcpy(palavra, "");
 			}
 			else{
 				/*
@@ -86,7 +94,15 @@ void criar(void){
 				else if(strcmp(tipo[j], "string") == 0){
 					setbuf(stdin, NULL);
 					printf("Digite uma string em %s: ", mat[0][j].string);
-					scanf("%s", &mat[i][j].string);
+					scanf("%s", &palavra);
+					while (strlen(palavra)>12){
+						printf ("String muito grande por favor digite uma com até 12 caracteres: ");
+						setbuf(stdin, NULL);
+						scanf("%s", &palavra);
+						}
+					strcpy(mat[i][j].string, "");
+					strcpy(mat[i][j].string, palavra);
+					strcpy(palavra, "");
 				}
 				else if(strcmp(tipo[j], "double") == 0){
 					setbuf(stdin, NULL);

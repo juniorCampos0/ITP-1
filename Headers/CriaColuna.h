@@ -15,5 +15,6 @@ tab5 **mat5;
 tab5 *NovaColuna;
 char id[25];
 char idTab[50];
+char palavra[75];
 
 void CriaColuna();

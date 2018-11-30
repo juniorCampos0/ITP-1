@@ -17,3 +17,4 @@ char **tipo;
 tab **mat;
 char id[25];
 char idTab[50];
+char palavra[75];

@@ -1,0 +1,8 @@
+linhas: 3
+colunas: 3
+ string
+ int
+
+            0    aifjsdsdj        12345
+            1     lololand            1
+            2      lalalan        12344

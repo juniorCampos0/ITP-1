@@ -105,7 +105,15 @@ void ProcuraString(void){
 	else if(strcmp(tipo[l-1], "string") == 0){
 		printf ("Digite um valor do tipo string: ");
 		setbuf(stdin, NULL);
-		scanf ("%s", &valor.string);
+		scanf("%s", &palavra);
+		while (strlen(palavra)>12){
+			printf ("String muito grande pr favor digite uma com até 12 caracteres: ");
+			setbuf(stdin, NULL);
+			scanf("%s", &palavra);
+		}
+		strcpy(valor.string, "");
+		strcpy(valor.string, palavra);
+		strcpy(palavra, "");
 	}
 	else if(strcmp(tipo[l-1], "double") == 0){
 		printf ("Digite um valor do tipo double: ");

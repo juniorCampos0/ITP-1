@@ -54,7 +54,15 @@ strcat(idTab, "tabelas/");
 					if (j == (coluna-1)){
 						printf ("Digite o nome da coluna: ");
 						setbuf(stdin, NULL);
-						scanf ("%s", &mat5[i][j].string);
+						scanf("%s", &palavra);
+						while (strlen(palavra)>12){
+							printf ("String muito grande por favor digite uma com até 12 caracteres: ");
+							setbuf(stdin, NULL);
+							scanf("%s", &palavra);
+						}
+						strcpy(&mat5[i][j].string, "");
+						strcpy(&mat5[i][j].string, palavra);
+						strcpy(palavra, "");
 					}
 					else{
 						fscanf(arquivo, " %12s", &mat5[i][j].string);

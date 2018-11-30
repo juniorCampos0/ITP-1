@@ -95,7 +95,15 @@ void criarLinha(void){
 					else if(strcmp(tipo[j-1], "string") == 0){
 						setbuf(stdin, NULL);
 						printf("Digite uma string em %s: ", mat1[j-1]->string);
-						scanf("%s", &novalinha[j-1].string);
+						scanf("%s", &palavra);
+						while (strlen(palavra)>12){
+							printf ("String muito grande por favor digite uma com até 12 caracteres: ");
+							setbuf(stdin, NULL);
+							scanf("%s", &palavra);
+							}
+						strcpy(novalinha[j-1].string, "");
+						strcpy(novalinha[j-1].string, palavra);
+						strcpy(palavra, "");
 						fprintf(arq, " %12s", novalinha[j-1].string);
 					}
 					else if(strcmp(tipo[j-1], "double") == 0){
