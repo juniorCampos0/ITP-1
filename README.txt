@@ -68,6 +68,10 @@
 	}
 		Para compilar todo o programa, não há necessidade de bibliotecas especiais, Headers/ é o caminho dos arquivos onde se encontram as funcionalidades, caso não os coloque os arquivos não serão encontrados e um erro será retornado. 
 }
+	#Versao do gcc{
+		Eu nao sei professora.
+}
+
 
 -- 5 -- Autores:
 	FRANCISCO DE ASSIS CAMPOS JÚNIOR/ E-mail: campos.junior.ifrn@gmail.com ;
